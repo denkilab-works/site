@@ -5,7 +5,7 @@ import { injectContentFiles } from '@analogjs/content';
 import PostAttributes from '../../post-attributes';
 
 @Component({
-  selector: 'app-blog',
+  selector: 'app-blog-page',
   standalone: true,
   imports: [RouterLink],
   template: `
@@ -31,6 +31,6 @@ import PostAttributes from '../../post-attributes';
     }
   `,
 })
-export default class BlogComponent {
+export default class BlogPageComponent {
   readonly posts = injectContentFiles<PostAttributes>();
 }

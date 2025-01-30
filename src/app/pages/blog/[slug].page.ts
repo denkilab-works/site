@@ -5,7 +5,7 @@ import { injectContent, MarkdownComponent } from '@analogjs/content';
 import PostAttributes from '../../post-attributes';
 
 @Component({
-  selector: 'app-blog-post',
+  selector: 'app-blog-post-page',
   standalone: true,
   imports: [AsyncPipe, MarkdownComponent],
   template: `
@@ -22,6 +22,6 @@ import PostAttributes from '../../post-attributes';
     }
   `,
 })
-export default class BlogPostComponent {
+export default class BlogPostPageComponent {
   readonly post$ = injectContent<PostAttributes>('slug');
 }
